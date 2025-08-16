@@ -1,0 +1,9 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+h2 {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
