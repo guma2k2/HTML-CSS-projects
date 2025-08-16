@@ -69,7 +69,7 @@ a {
     padding-top: 26px;
     position: sticky;
     top: -27px;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .navbar {
@@ -168,6 +168,10 @@ a {
 .clients .row {
     justify-content: space-between;
     align-items: center;
+}
+
+.clients .row-logo {
+    display: flex;
 }
 
 .clients .desc {
