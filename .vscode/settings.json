@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/project-3/index.html"
+    "livePreview.defaultPreviewPath": "/project-3/index.html",
+    "prettier.printWidth": 120
 }
