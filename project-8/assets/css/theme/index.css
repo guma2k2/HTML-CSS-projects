@@ -6,6 +6,16 @@ html.dark {
   --top-act-group-bg-color: #292E39;
   --top-act-group-shadow: rgba(0, 0, 0, 0.20);
   --top-act-group-separate: #EDEDF6;
+  --top-menu-border-color: #171C28;
+  --dropdown-bg-color: #2f3441;
+  --dropdown-shadow-color: rgba(23, 28, 40, 0.40);
+  --dropdown-arrow-color: brightness(0) saturate(100%) invert(16%) sepia(20%) saturate(680%) hue-rotate(185deg) brightness(89%) contrast(85%);
+  --menu-column-icon-color: brightness(0) saturate(100%) invert(87%) sepia(7%) saturate(526%) hue-rotate(201deg) brightness(113%) contrast(97%);
+}
+@media (max-width: 991.98px) {
+  html.dark {
+    --header-shadow-color: rgba(0, 0, 0, 0.20);
+  }
 }
 
 html {
@@ -16,10 +26,14 @@ html {
   --top-act-group-bg-color: #FFF;
   --top-act-group-shadow: rgba(237, 237, 246, 0.20);
   --top-act-group-separate: #EDEDF6;
+  --dropdown-bg-color: #fff;
+  --dropdown-shadow-color: rgba(200, 200, 200, 0.40);
+  --top-menu-border-color: #D2D1D6;
 }
 @media (max-width: 991.98px) {
   html {
     --header-bg-color: #fff;
+    --header-shadow-color: rgba(237, 237, 246, 0.20);
   }
 }
 
