@@ -1,33 +1,18 @@
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-@media (max-width: 991.98px) {
-  .logo {
-    gap: 10px;
-    margin-left: 40px;
-  }
-}
-@media (max-width: 767.98px) {
-  .logo {
-    margin-left: 0;
-  }
-}
-.logo__title {
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.45;
-}
-@media (max-width: 991.98px) {
-  .logo__title {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 991.98px) {
-  .logo__img {
-    width: 24px;
-  }
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 8  | /     @include abstracts.screen(lg) {
+ * 9  | |         gap: 10px;
+ * 10 | |         margin-left: 40px;
+ * 11 | \     }
+ *    '
+ *   scss\components\logo.scss 8:5  root stylesheet */
 
-/*# sourceMappingURL=logo.css.map */
+body::before {
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+    white-space: pre;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+    content: "Error: Undefined mixin.\a    \2577 \a 8  \2502  \250c      @include abstracts.screen(lg) {\a 9  \2502  \2502          gap: 10px;\a 10 \2502  \2502          margin-left: 40px;\a 11 \2502  \2514      }\a    \2575 \a   scss\\components\\logo.scss 8:5  root stylesheet";
+}

@@ -17,7 +17,28 @@ html.dark {
     --dropdown-arrow-color: brightness(0) saturate(100%) invert(16%) sepia(20%) saturate(680%) hue-rotate(185deg) brightness(89%) contrast(85%);
     --menu-column-icon-color: brightness(0) saturate(100%) invert(87%) sepia(7%) saturate(526%) hue-rotate(201deg) brightness(113%) contrast(97%);
 
-    @include abstracts.breakpoint (lg) {
+    @include abstracts.screen (lg) {
         --header-shadow-color: rgba(0, 0, 0, 0.20);
     }
+
+    // Sidebar
+    --sidebar-bg: #292E39;
+    --sidebar-shadow-color: rgba(23, 28, 40, 0.40);
+
+
+    // Home
+    --cate-item-bg-color: #171C28;
+    --cate-item-title-color: #fff;
+    --cate-item-thumb-bg: #292E39;
+
+    // Button
+    --filter-btn-color: #FFF;
+    --filter-btn-bg: #171C28;
+    --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+
+    // Product card 
+    --product-card-bg: #171C28;
+    --product-card-shadow: rgba(0, 0, 0, 0.20);
+    --product-card-brand: #9E9DA8;
 }
