@@ -12,7 +12,7 @@ html {
 
 
 
-    @include abstracts.breakpoint (lg) {
+    @include abstracts.screen (lg) {
         --header-bg-color: #fff;
         --header-shadow-color: rgba(237, 237, 246, 0.20);
     }
@@ -22,4 +22,33 @@ html {
     --dropdown-bg-color: #fff;
     --dropdown-shadow-color: rgba(200, 200, 200, 0.40);
     --top-menu-border-color: #D2D1D6;
+
+    // Sidebar
+    --sidebar-bg: #fff;
+    --sidebar-shadow-color: rgba(200, 200, 200, 0.40);
+
+    // Home
+    --cate-item-bg-color: #EEE;
+    --cate-item-title-color: #000;
+    --cate-item-thumb-bg: #fff;
+
+    // Button
+    --filter-btn-color : #6C6C72;
+    --filter-btn-bg: #fff;
+    --like-btn-shadow: rgba(124, 124, 124, 0.20);
+
+    // Product card
+    --product-card-brand: #9E9DA8;
+    --product-card-bg: #fff;
+    --product-card-shadow: rgba(237, 237, 246, 0.20);
+
+
+    // Filter form
+    --filter-form-bg: #fff;
+    --filter-form-shadow: rgba(200, 200, 200, 0.40);
+
+
+    @include abstracts.screen (md) {
+        --cate-item-bg-color: #fff;
+    }
 }

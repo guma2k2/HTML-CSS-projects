@@ -1,3 +1,5 @@
+@use "../abstracts";
+
 *,
 ::before,
 ::after {
@@ -26,6 +28,8 @@ button {
     border: none;
     outline: none;
     background-color: transparent;
+    padding: 0;
+    cursor: pointer;
 }
 
 
@@ -41,5 +45,13 @@ textarea,
 select {
     font-family: inherit;
     color: inherit;
+    outline: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+    @include abstracts.screen (sm) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 }
