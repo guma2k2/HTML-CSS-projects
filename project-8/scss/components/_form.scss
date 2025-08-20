@@ -1,0 +1,58 @@
+.form {
+    &__group {
+        margin-top: 30px;
+        width: 100%;
+
+        &--inline {
+            display: flex;
+        }
+    }
+
+    &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &-input {
+            width: 17px;
+            height: 17px;
+        }
+
+        &-label {
+            color: #9E9DA8;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.47;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        height: 100%;
+
+
+        &::placeholder {
+            color: var(--top-menu-border-color);
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 1.44;
+        }
+
+        &-icon {
+            margin-left: 12px;
+        }
+    }
+
+    &__text-input {
+        border-radius: 10px;
+        border: 1.5px solid var(--top-menu-border-color);
+        display: flex;
+        align-items: center;
+        height: 50px;
+        padding: 12px;
+
+        &:focus-within {
+            border-color: #77dae6;
+        }
+    }
+}

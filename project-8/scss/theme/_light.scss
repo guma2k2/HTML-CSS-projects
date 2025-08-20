@@ -46,6 +46,13 @@ html {
     // Filter form
     --filter-form-bg: #fff;
     --filter-form-shadow: rgba(200, 200, 200, 0.40);
+    --filter-tag-bg: #F8F8FB;
+
+    // Footer
+    --footer-bg-color: #eee;
+
+    // Auth
+    --auth-intro-bg: #FAFAFD;
 
 
     @include abstracts.screen (md) {
