@@ -6,23 +6,10 @@
         <title>Grocery Mart</title>
 
         <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="./assets/favicon/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="./assets/favicon/favicon.svg"
-        />
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
         <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="./assets/favicon/apple-touch-icon.png"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="./assets/favicon/site.webmanifest" />
 
         <!-- Fonts -->
@@ -35,16 +22,87 @@
         <script src="./assets/js/scripts.js"></script>
     </head>
     <body>
-        <header id="header"></header>
+        <main class="auth">
+            <div class="auth__intro">
+                <a href="./" class="logo auth__intro-logo d-none d-md-flex">
+                    <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
+                    <h1 class="logo__title">grocerymart</h1>
+                </a>
+                <img src="./assets/img/auth/intro.svg" alt="" class="auth__intro-img" />
+                <p class="auth__intro-desc">
+                    The best of luxury brand values, high quality products, and innovative services
+                </p>
+                <button class="auth__intro-next d-none">
+                    <img src="" alt="" />
+                </button>
+            </div>
+            <div class="auth__content">
+                <div class="auth__content-inner">
+                    <a href="./" class="logo">
+                        <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
+                        <h1 class="logo__title">grocerymart</h1>
+                    </a>
+                    <h1 class="auth__heading">Sign Up</h1>
+                    <p class="auth__desc">Let’s create your account and Shop like a pro and save money.</p>
+                    <form action="./index-logined.html" class="form auth__form" autocomplete="off">
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input type="email" class="form__input" placeholder="Email" autofocus required />
+                                <img src="./assets/icons/email.svg" alt="" class="form__input-icon" />
+                                <img src="" alt="" class="form__input-con-error" />
+                            </div>
+                            <p class="form__error d-none">Email is not in correct format</p>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    class="form__input"
+                                    placeholder="Password"
+                                    minlength="6"
+                                    required
+                                />
+                                <img src="./assets/icons/password.svg" alt="" class="form__input-icon" />
+                                <img src="" alt="" class="form__input-con-error d-none" />
+                            </div>
+                            <p class="form__error d-none">Password must be at least 6 characters</p>
+                        </div>
 
-        <script>
-            load("#header", "./templates/header.html");
-        </script>
-        <h1>Sign up Page</h1>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    class="form__input"
+                                    placeholder="Confirm password"
+                                    minlength="6"
+                                    required
+                                />
+                                <img src="./assets/icons/password.svg" alt="" class="form__input-icon" />
+                                <img src="" alt="" class="form__input-con-error d-none" />
+                            </div>
+                            <p class="form__error d-none">Password must be at least 6 characters</p>
+                        </div>
+                        <div class="form__group form__group--inline">
+                            <label for="" class="form__checkbox">
+                                <input type="checkbox" class="form__checkbox-input" name="checkbox" />
+                                <span class="form__checkbox-label">Set as default card</span>
+                            </label>
+                        </div>
+                        <div class="form__group auth__btn-group">
+                            <button class="btn btn--primary auth__btn form__submit-btn">Sign Up</button>
+                            <button class="btn btn--outline auth__btn btn--no-margin">
+                                <img src="./assets/icons/google.svg" alt="" class="btn__icon icon" />
+                                Sign in with Google
+                            </button>
+                        </div>
+                    </form>
 
-        <footer id="footer"></footer>
-        <script>
-            load("#footer", "./templates/footer.html");
-        </script>
+                    <p class="auth__text">
+                        You have an account yet?
+                        <a href="" class="auth__link auth__text-link">Sign In</a>
+                    </p>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
