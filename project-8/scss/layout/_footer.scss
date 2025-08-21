@@ -3,7 +3,7 @@
 .footer {
     background: var(--footer-bg-color);
     padding: 50px 0;
-    margin-top: 50px;
+    // margin-top: 50px;
     font-family: "Lato", sans-serif;
 
     @include abstracts.screen(lg) {

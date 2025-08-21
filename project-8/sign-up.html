@@ -32,11 +32,11 @@
                 <p class="auth__intro-desc">
                     The best of luxury brand values, high quality products, and innovative services
                 </p>
-                <button class="auth__intro-next d-none">
-                    <img src="" alt="" />
+                <button class="auth__intro-next d-none d-md-flex js-toggle" toggle-target="#auth-content">
+                    <img src="./assets/img/auth/intro-arrow.svg" alt="" />
                 </button>
             </div>
-            <div class="auth__content">
+            <div class="auth__content hide" id="auth-content">
                 <div class="auth__content-inner">
                     <a href="./" class="logo">
                         <img src="./assets/icons/logo.svg" alt="grocerymart" class="logo__img" />
@@ -49,9 +49,9 @@
                             <div class="form__text-input">
                                 <input type="email" class="form__input" placeholder="Email" autofocus required />
                                 <img src="./assets/icons/email.svg" alt="" class="form__input-icon" />
-                                <img src="" alt="" class="form__input-con-error" />
+                                <img src="./assets/icons/error.svg" alt="" class="form__input-icon-error" />
                             </div>
-                            <p class="form__error d-none">Email is not in correct format</p>
+                            <p class="form__error">Email is not in correct format</p>
                         </div>
                         <div class="form__group">
                             <div class="form__text-input">
@@ -63,9 +63,9 @@
                                     required
                                 />
                                 <img src="./assets/icons/password.svg" alt="" class="form__input-icon" />
-                                <img src="" alt="" class="form__input-con-error d-none" />
+                                <img src="./assets/icons/error.svg" alt="" class="form__input-icon-error" />
                             </div>
-                            <p class="form__error d-none">Password must be at least 6 characters</p>
+                            <p class="form__error">Password must be at least 6 characters</p>
                         </div>
 
                         <div class="form__group">
@@ -78,13 +78,18 @@
                                     required
                                 />
                                 <img src="./assets/icons/password.svg" alt="" class="form__input-icon" />
-                                <img src="" alt="" class="form__input-con-error d-none" />
+                                <img src="./assets/icons/error.svg" alt="" class="form__input-icon-error" />
                             </div>
-                            <p class="form__error d-none">Password must be at least 6 characters</p>
+                            <p class="form__error">Password must be at least 6 characters</p>
                         </div>
                         <div class="form__group form__group--inline">
-                            <label for="" class="form__checkbox">
-                                <input type="checkbox" class="form__checkbox-input" name="checkbox" />
+                            <label for="checkbox" class="form__checkbox">
+                                <input
+                                    id="checkbox"
+                                    type="checkbox"
+                                    class="form__checkbox-input d-none"
+                                    name="checkbox"
+                                />
                                 <span class="form__checkbox-label">Set as default card</span>
                             </label>
                         </div>
@@ -99,10 +104,13 @@
 
                     <p class="auth__text">
                         You have an account yet?
-                        <a href="" class="auth__link auth__text-link">Sign In</a>
+                        <a href="./sign-in.html" class="auth__link auth__text-link">Sign In</a>
                     </p>
                 </div>
             </div>
         </main>
+        <script>
+            window.dispatchEvent(new Event("template-loaded"));
+        </script>
     </body>
 </html>
