@@ -35,12 +35,22 @@ html.dark {
   --product-detail-tag-bg: #292E39;
   --product-info-card-bg: #B9BABE;
   --product-info-price-color: #EEE;
+  --product-detail-info-bg: #292E39;
+  --product-detail-info-content-bg: transparent;
   --breadcrumbs-bg: #171C28;
   --breadcrumbs-shadow: rgba(23, 28, 40, 0.20);
+  --review-card-bg: #171C28;
+  --text-content-blockquote: #171C28;
 }
 @media (max-width: 991.98px) {
   html.dark {
     --header-shadow-color: rgba(0, 0, 0, 0.20);
+  }
+}
+@media (max-width: 767.98px) {
+  html.dark {
+    --product-info-bg: transparent;
+    --product-detail-info-content-bg: #171C28;
   }
 }
 
@@ -78,8 +88,12 @@ html {
   --product-detail-tag-bg: #EDEDF6;
   --product-info-card-bg: #B9BABE;
   --product-info-price-color: #000;
+  --product-detail-info-bg: #fff;
+  --product-detail-info-content-bg: #fff;
   --breadcrumbs-bg: #F6F6F6;
   --breadcrumbs-shadow: rgba(237, 237, 246, 0.20);
+  --review-card-bg: #FAFAFD;
+  --text-content-blockquote: #ebebeb;
 }
 @media (max-width: 991.98px) {
   html {
@@ -94,6 +108,11 @@ html {
     --product-detail-bg: #FAFAFD;
     --product-info-bg: #fff;
     --breadcrumbs-bg: #fff;
+  }
+}
+@media (max-width: 767.98px) {
+  html {
+    --review-card-bg: #fff;
   }
 }
 
