@@ -64,6 +64,8 @@ html {
     --product-detail-tag-bg: #EDEDF6;
     --product-info-card-bg: #B9BABE;
     --product-info-price-color: #000;
+    --product-detail-info-bg: #fff;
+    --product-detail-info-content-bg: #fff;
 
     // Breadcrumbs
     --breadcrumbs-bg : #F6F6F6;
@@ -81,4 +83,15 @@ html {
         --breadcrumbs-bg: #fff;
 
     }
+
+    // Review card
+    --review-card-bg: #FAFAFD;
+
+    @include abstracts.screen (md) {
+        --review-card-bg: #fff;
+    }
+
+    // Text content 
+    --text-content-blockquote: #ebebeb;
+
 }
